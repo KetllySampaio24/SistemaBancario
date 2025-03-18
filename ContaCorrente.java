@@ -23,8 +23,7 @@ public class ContaCorrente extends ContaBancaria {
     @Override
     public void depositar(double valor) {
         double novoSaldo = getSaldo() + valor;
-        setSaldo(novoSaldo); // Atualiza o saldo após o depósito
-        cobrarTaxa(); // Após o depósito, cobra a taxa de manutenção
+        setSaldo(novoSaldo); 
         System.out.println("Depósito realizado com sucesso! Saldo após depósito: R$ " + String.format("%.2f", getSaldo()));
     }
 
