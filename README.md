@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este é um sistema bancário simples, desenvolvido em Java, que permite criar contas bancárias de diferentes tipos (Corrente e Poupança), realizar depósitos, transferências, ver o saldo e emitir relatórios detalhados. O sistema também aplica juros mensais para contas poupança e cobra uma taxa de manutenção para contas correntes.
+Este é um sistema bancário simples, desenvolvido em Java, que permite criar contas bancárias de diferentes tipos (Corrente e Poupança), realizar depósitos, transferências, ver o saldo e emitir relatórios detalhados. O sistema também aplica juros mensais para contas poupança.
 
 ---
 
@@ -19,7 +19,7 @@ Este é um sistema bancário simples, desenvolvido em Java, que permite criar co
   - **Transferência**: Realiza transferências entre contas.
   - **Ver saldo**: Exibe o saldo atual da conta.
   - **Emitir Relatório**: Gera um relatório completo da conta.
-
+  - **Troca de Conta**: Permite a alteração do tipo de conta, solicitando a autenticação de senha novamente.
 ---
 
 ## Tecnologias Usadas
@@ -35,7 +35,7 @@ Este é um sistema bancário simples, desenvolvido em Java, que permite criar co
 A estrutura básica do projeto é composta pelas seguintes classes:
 
 - **`ContaBancaria`**: Classe base que contém as propriedades e métodos comuns a todas as contas bancárias.
-- **`ContaCorrente`**: Herda de `ContaBancaria` e implementa funcionalidades específicas para contas correntes, como a cobrança da taxa de manutenção.
+- **`ContaCorrente`**: Herda de `ContaBancaria` e implementa funcionalidades para contas correntes.
 - **`ContaPoupanca`**: Herda de `ContaBancaria` e implementa a funcionalidade de aplicação de juros mensais sobre o saldo.
 - **`Main`**: Classe principal que interage com o usuário e gerencia as operações do sistema bancário.
 
