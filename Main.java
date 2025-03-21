@@ -7,8 +7,6 @@ public class Main {
 
         ContaBancaria contaCorrente = new ContaCorrente("José Maria Teste", 0.0, 1234);
         ContaBancaria contaPoupanca = new ContaPoupanca("Tesouro Teste", 100.0, 4321, 10);
-        ((ContaPoupanca) contaPoupanca).aplicarJuros();
-        contaPoupanca.emitirRelatorio();
 
 
         System.out.println("\n ********** Sistema de Conta Bancária **********");
@@ -36,6 +34,9 @@ public class Main {
                 System.out.println("Senha Correta\nBem-vindo(a) " + contaEscolhida.getTitular());
                 System.out.println("------------------------------------");
                 System.out.println("Saldo: R$ " + contaEscolhida.getSaldo());
+                if(contaEscolhida == contaPoupanca){
+                    ((ContaPoupanca) contaPoupanca).aplicarJuros();
+                }
 
 
                 do {
