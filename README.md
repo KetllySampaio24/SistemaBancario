@@ -44,6 +44,7 @@ A estrutura básica do projeto é composta pelas seguintes classes:
 ## Exemplo de Interação
 
 
-![image](https://github.com/user-attachments/assets/2d616053-c7b5-4dbe-88c5-2db31f19c2fa)
+![image](https://github.com/user-attachments/assets/3c83ce99-70cd-4498-b67f-bb9adde2c2a2)
+
 
 
